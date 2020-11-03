@@ -37,6 +37,8 @@ c'è la possibilità che il file html prodotto possa non funzionare correttament
 
 Per default il percorso di progetto viene considerato per primo, in seconda scelta il percorso del file sorgente.
 
+Pur con diversi avvertimenti produce correttamente anche da file temporanei.
+
 ### 2. - OPZIONI
 
 1. Espressione filtro: un filtro componibile nativo di QGIS;
