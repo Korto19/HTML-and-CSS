@@ -1,3 +1,6 @@
+/* CSS con larghezza della tabella e delle colonne espresse in mm */
+/* la larghezza della tabella deve essere uguale o maggiore della */
+/* somma delle larghezze delle colonne*/
 /* Personalizzazione Titolo */
 b {
 	font-family: Verdana;
