@@ -438,7 +438,7 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
                         #print('img no ', name, f[name], img_type)
                         
                     #se è un'immagine e/o ha un percorso
-                    if img_type in ["JPEG","jpeg","JPG","jpg","PNG","png"]:
+                    if img_type in ["JPEG","jpeg","JPG","jpg","PNG","png","SVG","svg"]:
                         #se non è un file temporaneo o non voglio riferimenti relativi
                         if not rel_path or 'processing' in html:
                             img_name = 'file:///'
