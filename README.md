@@ -32,6 +32,9 @@ I file prodotti, se temporanei, avranno sempre percorsi assoluti, altrimenti non
 
 Per poter eventualmente traferire il progetto con i file html relativi, tutti i file devono risiedere in sottocartelle della cartella di progetto.
 
+Lo script effettua una serie di controlli sulla congruenza dei percorsi dei file origine (sorgente, css, icona/immagine) e avverte se
+c'è la possibilità che il file html prodotto possa non funzionare correttamente.
+
 ### 2. - OPZIONI
 
 1. Espressione filtro: un filtro componibile nativo di QGIS;
