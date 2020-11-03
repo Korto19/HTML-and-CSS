@@ -130,7 +130,7 @@ div {
 come si può notare la larghezza **width** delle colonne e la larghezza della tabella sono espresse in mm e questo è veramente utile per produrre impaginazioni precise.
 
 # 4. Dati di esempio
-[Esempio CSS](./file.css)
+[Esempio CSS](./script-css/css/Black.css)
 
 # 5. Videotutorial
 
