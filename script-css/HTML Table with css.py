@@ -3,7 +3,7 @@
 """
 ***************************************************************************
 *                                                                         *
-*   Giulio Fattori 30.10.2020                                             *
+*   Giulio Fattori 30.10.2020  ver 2.61 03.11.2020                                           *
 *                                                                         *
 *   This program is free software; you can redistribute it and/or modify  *
 *   it under the terms of the GNU General Public License as published by  *
@@ -112,7 +112,7 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
         should provide a basic description about what the algorithm does and the
         parameters and outputs associated with it..
         """
-        return self.tr("<mark style='color:black; font-size: 8px'><strong>Version 2.60 02.11.2020</strong></mark>\n\
+        return self.tr("<mark style='color:black; font-size: 8px'><strong>Version 2.61 03.11.2020</strong></mark>\n\
         Produce un file da utilizzare come sorgente html in una cornice HTML del composer\n\
         <mark style='color:blue'><strong>OPZIONI</strong></mark>\n\
         <i>- Filtro sui campi\n\
@@ -162,7 +162,7 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
             QgsProcessingParameterExpression(
                 self.GROUP_BY,
                 self.tr('Espressione filtro'),
-                defaultValue= "",
+                defaultValue = [],
                 optional = True,
                 parentLayerParameterName=self.INPUT_L
             )
@@ -172,7 +172,7 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
             QgsProcessingParameterExpression(
                 self.INPUT_T,
                 self.tr('Titolo pagina'),
-                defaultValue='',
+                defaultValue= [],
                 optional = True,
                 parentLayerParameterName=self.INPUT_L
             )
@@ -299,9 +299,11 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
         path_file = (self.parameterDefinition('INPUT_L').valueAsPythonString(parameters['INPUT_L'], context))
         path_file = path_file[1:path_file.rfind('/')+1]
         if 'memory' in path_file:
+            file_mem = True
             path_file = ''
             #print('temporary file')
         else:
+            file_mem = False
             #windowizzo la path quale che sia
             path_file = str(Path(path_file))
             #print('file path ', path_file)
@@ -438,10 +440,13 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
                         #print('img no ', name, f[name], img_type)
                         
                     #se è un'immagine e/o ha un percorso
-                    if img_type in ["JPEG","jpeg","JPG","jpg","PNG","png","SVG","svg"]:
+                    if img_type in ["JPEG","jpeg","JPG","jpg","PNG","png"]:
                         #se non è un file temporaneo o non voglio riferimenti relativi
                         if not rel_path or 'processing' in html:
-                            img_name = 'file:///'
+                            if file_mem:
+                                img_name = 'file:///'
+                            else:
+                                img_name = ''
                             if path_dir not in str(Path(f[name])):
                                 img_name = img_name + path_dir
                             img_name = img_name + f[name]
