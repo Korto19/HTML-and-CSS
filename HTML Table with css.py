@@ -144,7 +144,7 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
                 self.INPUT_L,
                 self.tr('Input sorgente dati'),
                 [QgsProcessing.TypeMapLayer],
-                "C:/Users/Delta/Desktop/SCRIPT GIS/Test HTML/elenco_test.csv"
+                ""
             )
         )
         
@@ -153,7 +153,7 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
                 self.INPUT_F,
                 self.tr('Selezionare i campi da inserire nel file Html'),
                 allowMultiple = True,
-                defaultValue = ['id','Data','Nome_Foto','Descrizione','Foto_0'],
+                defaultValue = [],
                 parentLayerParameterName=self.INPUT_L
             )
         )
@@ -162,7 +162,7 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
             QgsProcessingParameterExpression(
                 self.GROUP_BY,
                 self.tr('Espressione filtro'),
-                #defaultValue= " ""id"" in ('1','10','20')",
+                defaultValue= "",
                 optional = True,
                 parentLayerParameterName=self.INPUT_L
             )
@@ -172,7 +172,7 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
             QgsProcessingParameterExpression(
                 self.INPUT_T,
                 self.tr('Titolo pagina'),
-                #defaultValue='Assoluto',
+                defaultValue='',
                 optional = True,
                 parentLayerParameterName=self.INPUT_L
             )
@@ -184,7 +184,7 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
                 self.INPUT_I,
                 'Icona Gruppo',
                 behavior=QgsProcessingParameterFile.File, fileFilter='Image file (*.gif; *.jpeg; *.jpg; *.png; *.svg)',
-                defaultValue = 'C:\\Users\\Delta\\Desktop\\SCRIPT GIS\\Test HTML\\icone\\Nur1.jpg',
+                defaultValue = '',
                 optional = True
             )
         )
@@ -195,7 +195,7 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
                 self.INPUT_S,
                 'Foglio di stile CSS',
                 behavior=QgsProcessingParameterFile.File, fileFilter='Css file (*.css)',
-                defaultValue = "C:\\Users\\Delta\\Desktop\\SCRIPT GIS\\Test HTML\\css\\grey.css",
+                defaultValue = "",
                 optional = True
             )
         )
