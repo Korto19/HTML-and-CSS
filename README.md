@@ -134,3 +134,9 @@ come si può notare la larghezza **width** delle colonne e la larghezza della ta
 
 # 5. Videotutorial
 
+# 5. Ringraziamenti
+QGIS.org -
+divtable.com -
+S. Fiandaca -
+A. Cusano -
+
