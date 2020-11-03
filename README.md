@@ -34,7 +34,7 @@ Per poter eventualmente traferire il progetto con i file html relativi, tutti i 
 
 ### 2. - OPZIONI
 
-1. Espressione filtro: un filtro componibile nativo di QGis;
+1. Espressione filtro: un filtro componibile nativo di QGIS;
 2. Titolo: una qualsiasi combinazione alfanumerica nella casella di testo, senza apici, il sistema la mette in rosso, ma funziona perfettamente; altrimenti una qualsiasi composizione entro il solito calcolatore, ovviamente si tratta di una scritta non dinamica;
 3. Icona o immagine: una qualsiasi immagine tra quelle compatibili:
 4. CSS: questa è la parte più interessante dato che permette una personalizzazione accurata della pagina html prodotta. Come anzidetto i tag utilizzati sono **'Table'**, **'b'** e **'div'**, per generare comodamente il css vi sono diversi tools gratuiti online tra cui https://divtable.com/table-styler/ che permette con pochi passaggi di ottenere risultati veramente notevoli e la cui unica limitazione è la fantasia dell'autore. Il sito da anche la possibilità di definire ogni singolo aspetto dell'impaginazione.
