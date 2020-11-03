@@ -35,6 +35,8 @@ Per poter eventualmente traferire il progetto con i file html relativi, tutti i 
 Lo script effettua una serie di controlli sulla congruenza dei percorsi dei file origine (sorgente, css, icona/immagine) e avverte se
 c'è la possibilità che il file html prodotto possa non funzionare correttamente.
 
+Per default il percorso di progetto viene considerato per primo, in seconda scelta il percorso del file sorgente.
+
 ### 2. - OPZIONI
 
 1. Espressione filtro: un filtro componibile nativo di QGIS;
