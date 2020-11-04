@@ -454,7 +454,7 @@ class HTML_Table_with_css_ProcessingAlgorithm(QgsProcessingAlgorithm):
                             #se voglio riferimenti relativi
                             img_name = str(Path(f[name]))
                             img_name = img_name.replace(path_dir,'')
-                        line = ''.join('<td><center><img src ='+ "'" + img_name + "'" + 'width="' + wf + '" height="' + hf + '"></center></td>\r')
+                        line = ''.join('<td><center><img src ='+ "'" + img_name + "'" + 'alt='+ "'" + img_name + "'" + 'width="' + wf + '" height="' + hf + '"></center></td>\r')
                     else:
                         try:
                             line = ''.join('<td>'+f[name].toString("dd.MM.yyyy")+ '</td>\r')
