@@ -28,7 +28,7 @@ Le dimensioni dell'icona e delle immagini possono essere espresse in tutte le un
 
 Il file css determina tutte le caratteristiche estetiche del file prodotto, riferendosi sempre all'elemento 'Table', alt tag **'b'** per il titolo ed al tag **'div'** per l'immagine o l'icona in intestazione.
 
-I file prodotti, se temporanei, avranno sempre percorsi assoluti, altrimenti non sarebbero corretti, se salvati possono avere sia percorsi assoluti che relativi.
+I file prodotti, se temporanei, avranno sempre percorsi assoluti, altrimenti non sarebbero funzionanti, se salvati possono avere sia percorsi assoluti sia relativi.
 
 Per poter eventualmente traferire il progetto con i file html relativi, tutti i file devono risiedere in sottocartelle della cartella di progetto.
 
@@ -37,14 +37,15 @@ c'è la possibilità che il file html prodotto possa non funzionare correttament
 
 Per default il percorso di progetto viene considerato per primo, in seconda scelta il percorso del file sorgente.
 
-Pur con diversi avvertimenti produce correttamente anche da file temporanei.
+_NOTA BENE: 
+Con i file temporanei, se i campi contengono percorsi relativi, l'html prodotto non avrà le immagini correttamente visualizzate._
 
 ### 2. - OPZIONI
 
 1. Espressione filtro: un filtro componibile nativo di QGIS;
 2. Titolo: una qualsiasi combinazione alfanumerica nella casella di testo, senza apici, il sistema la mette in rosso, ma funziona perfettamente; altrimenti una qualsiasi composizione entro il solito calcolatore, ovviamente si tratta di una scritta non dinamica;
 3. Icona o immagine: una qualsiasi immagine tra quelle compatibili:
-4. CSS: questa è la parte più interessante dato che permette una personalizzazione accurata della pagina html prodotta. Come anzidetto i tag utilizzati sono **'Table'**, **'b'** e **'div'**, per generare comodamente il css vi sono diversi tools gratuiti online tra cui https://divtable.com/table-styler/ che permette con pochi passaggi di ottenere risultati veramente notevoli e la cui unica limitazione è la fantasia dell'autore. Il sito da anche la possibilità di definire ogni singolo aspetto dell'impaginazione.
+4. CSS: questa è la parte più interessante dato che permette una personalizzazione accurata della pagina html prodotta. Come anzidetto i tag utilizzati sono **'Table'**, **'b'** e **'div'**, per generare comodamente il css vi sono diversi tools gratuiti online tra cui **https://divtable.com/table-styler/** che permette con pochi passaggi di ottenere risultati veramente notevoli e la cui unica limitazione è la fantasia dell'autore. Il sito da anche la possibilità di definire ogni singolo aspetto dell'impaginazione.
    
 ### 3. CSS - ESEMPIO ARIAL FIXED
 A titolo di esempio ecco un css:
