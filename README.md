@@ -59,7 +59,9 @@ Con i file temporanei, se i campi contengono percorsi relativi, l'html prodotto 
 2. Titolo: una qualsiasi combinazione alfanumerica nella casella di testo, senza apici, il sistema la mette in rosso, ma funziona perfettamente; altrimenti una qualsiasi composizione entro il solito calcolatore, ovviamente si tratta di una scritta non dinamica;
 3. Icona o immagine: una qualsiasi immagine tra quelle compatibili:
 4. CSS: questa è la parte più interessante dato che permette una personalizzazione accurata della pagina html prodotta. Come anzidetto i tag utilizzati sono **'Table'**, **'b'** e **'div'**, per generare comodamente il css vi sono diversi tools gratuiti online tra cui **https://divtable.com/table-styler/** che permette con pochi passaggi di ottenere risultati veramente notevoli e la cui unica limitazione è la fantasia dell'autore. Il sito da anche la possibilità di definire ogni singolo aspetto dell'impaginazione.
-   
+
+↑[torna su](##html-and-css)↑
+
 ### 3. CSS - ESEMPIO ARIAL FIXED
 A titolo di esempio ecco un css:
 ```
@@ -149,18 +151,23 @@ div {
 }`
 ```
 come si può notare la larghezza **width** delle colonne e la larghezza della tabella sono espresse in mm e questo è veramente utile per produrre impaginazioni precise.
-
+↑[torna su](##html-and-css)↑
 # 4. Dati di esempio
 * [Arial fixed (mm)](./script-css/css/Arial%20fixed.css)
 * [Black](./script-css/css/Black.css)
 * [Comicgreen](./script-css/css/Comicgreen.css)
 * [Grey](./script-css/css/Grey.css)
 
+↑[torna su](##html-and-css)↑
 # 5. Videotutorial
 [![](https://img.youtube.com/vi/reoXJ7Pmk-I/0.jpg)](https://youtu.be/reoXJ7Pmk-I "HTML with CSS generator")
+
+↑[torna su](##html-and-css)↑
 
 # 6. Ringraziamenti
 QGIS.org -
 divtable.com -
 S. Fiandaca -
 A. Cusano
+
+↑[torna su](##html-and-css)↑
