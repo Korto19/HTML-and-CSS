@@ -138,10 +138,13 @@ div {
 come si può notare la larghezza **width** delle colonne e la larghezza della tabella sono espresse in mm e questo è veramente utile per produrre impaginazioni precise.
 
 # 4. Dati di esempio
-[Esempio CSS](./script-css/css/Arial%20fixed.css)
+* [Arial fixed (mm)](./script-css/css/Arial%20fixed.css)
+* [Black](./script-css/css/Black.css)
+* [Comicgreen](./script-css/css/Comicgreen.css)
+* [EsempioGrey](./script-css/css/grey.css)
 
 # 5. Videotutorial
-[HTML with CSS](https://youtu.be/reoXJ7Pmk-I)
+[![](https://img.youtube.com/vi/reoXJ7Pmk-I/0.jpg)](https://youtu.be/reoXJ7Pmk-I "HTML with CSS generator")
 
 # 6. Ringraziamenti
 QGIS.org -
