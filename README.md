@@ -141,7 +141,7 @@ come si può notare la larghezza **width** delle colonne e la larghezza della ta
 [Esempio CSS](./script-css/css/Arial%20fixed.css)
 
 # 5. Videotutorial
-[HTML with CSS](https://youtu.be/Ki_pSgIP_aE)
+[HTML with CSS](https://youtu.be/reoXJ7Pmk-I)
 
 # 6. Ringraziamenti
 QGIS.org -
