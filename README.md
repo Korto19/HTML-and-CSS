@@ -168,10 +168,7 @@ come si può notare la larghezza **width** delle colonne e la larghezza della ta
 ↑[torna su](#HTML-and-CSS )↑
 
 # 6. Ringraziamenti
-QGIS.org -
-divtable.com -
-A. Cusano - 
-[Totò Fiandaca](https://pigrecoinfinito.com/)
+[QGIS.org](https://www.qgis.org/it/site/) - [divtable.com](https://divtable.com/table-styler/) - [Totò Fiandaca](https://pigrecoinfinito.com/) - A. Cusano
 
 
 ↑[torna su](#HTML-and-CSS )↑
